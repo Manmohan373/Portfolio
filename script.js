@@ -10,5 +10,4 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     } else {
       alert('Thank you for your message, ' + name + '! I will get back to you soon.');
     }
-  });
-  
+  });  
