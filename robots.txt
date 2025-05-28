@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://manmohan373.github.io/Portfolio/sitemap.xml
