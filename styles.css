@@ -1,278 +1,222 @@
-/* General Reset */
+/* =====================
+   RESET & BASE
+===================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-/* Container styling for Contact Me */
-.contact-container {
-    max-width: 600px; /* Restrict width */
-    margin: 0 auto; /* Centering the container */
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  }
-  
-  /* Heading styling */
-  .contact-container h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  /* Paragraph styling */
-  .contact-container p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #666;
-  }
-  
-  /* Styling for contact info */
-  .contact-info p {
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: #333;
-  }
-  
-  .contact-info a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Styling for the form */
-  #contact-form input, #contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  #contact-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #contact-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Ensure the contact form and information stay compact */
-  @media (max-width: 768px) {
-    .contact-container {
-      padding: 15px;
-    }
-  
-    .contact-container h2 {
-      font-size: 22px;
-    }
-  
-    .contact-info p {
-      font-size: 13px;
-    }
-  
-    #contact-form input, #contact-form textarea {
-      padding: 10px;
-    }
-  
-    #contact-form button {
-      font-size: 14px;
-    }
-  }
-  
-  
-  header {
-    background-color: #343a40;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  header .header-content h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  header .subtitle {
-    font-size: 1.2rem;
-    color: #ccc;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin-top: 20px;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #e9ecef;
-  }
-  
-  .section {
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #343a40;
-    text-transform: uppercase;
-  }
-  
-  .skills-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .skill {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    transition: transform 0.3s ease, background-color 0.3s;
-  }
-  
-  .skill:hover {
-    transform: scale(1.1);
-    background-color: #0056b3;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f8f9fb;
+  color: #1f2937;
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 45px 0;
+}
+
+.section.compact {
+  padding: 30px 0;
+}
+/* =====================
+   HEADER
+===================== */
+header {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+.header-content h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+nav ul {
+  display: flex;
+  gap: 22px;
+  /* justify-content: center; */
+  margin-top: 15px;
+  list-style: none;
+}
+
+nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Resume Button */
+.resume-btn {
+  background: #2563eb;
+  padding: 6px 14px;
+  border-radius: 4px;
+  color: #ffffff !important;
+  font-size: 0.85rem;
+}
+
+.resume-btn:hover {
+  background: #1d4ed8;
+}
+
+/* =====================
+   ABOUT
+===================== */
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.profile-img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 6px; /* ❗ NO circle */
+  border: 1px solid #e5e7eb;
+}
+
+.about-text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+/* =====================
+   EXPERIENCE
+===================== */
+.experience-card {
+  background: #ffffff;
+  padding: 25px;
+  margin-top: 25px;
+  border-left: 4px solid #2563eb;
+}
+
+.experience-card h3 {
+  font-size: 1.2rem;
+}
+
+.experience-card h4 {
+  margin: 6px 0;
+  color: #475569;
+}
+
+.experience-card span {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.experience-card ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 8px;
+}
+
+/* =====================
+   PROJECTS
+===================== */
+.project {
+  background: #ffffff;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+.project ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.project li {
+  margin-bottom: 8px;
+}
+
+/* ❌ Remove game-style buttons */
+.project-link {
+  display: none;
+}
+
+/* =====================
+   SKILLS
+===================== */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill {
+  background: #e5e7eb;
+  color: #111827;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* =====================
+   CONTACT
+===================== */
+#contact p a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+#contact p a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background: #020617;
+  color: #94a3b8;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.85rem;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
   .about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  .profile-img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  .project-link {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .project-link:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  .about-text {
-    max-width: 600px;
-    font-size: 1.1rem;
-    color: #555;
-  }
-  
-  .project-list {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .project {
-    background-color: #fff;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
-  
-  .project:hover {
-    transform: translateY(-10px);
-  }
-  
-  form input, form textarea, form button {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    transition: border-color 0.3s;
-  }
-  
-  form input:focus, form textarea:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  form button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  form button:hover {
-    background-color: #0056b3;
-  }
-  
-  footer {
-    background-color: #343a40;
-    color: #fff;
+    flex-direction: column;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
   }
-  
-  footer p {
-    font-size: 1rem;
-    color: #ccc;
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
-  
+}
