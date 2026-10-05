@@ -432,9 +432,10 @@
           <form id="contact-form" class="form" novalidate>
             <label>Name<input id="name" name="name" type="text" autocomplete="name" required /></label>
             <label>Email<input id="email" name="email" type="email" autocomplete="email" required /></label>
-            <label>Message<textarea id="message" name="message" rows="5" required></textarea></label>
-            <button class="btn btn-primary" type="submit">Send message</button>
-            <p class="form-note" id="formNote" role="status">Opens your email app with the message pre-filled.</p>
+            <label>Message<textarea id="message" name="message" rows="5" minlength="10" maxlength="3000" required></textarea></label>
+            <div class="hp" aria-hidden="true"><label>Website<input id="website" name="website" type="text" tabindex="-1" autocomplete="off" /></label></div>
+            <button class="btn btn-primary" type="submit" id="sendBtn">Send message</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite">I usually reply within a day.</p>
           </form>
         </div>
       </div>
