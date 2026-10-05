@@ -1,238 +1,450 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="s2WX8n99CnKA3vNHMxDeJVzqN9z3_81BULiLDNqtjqw" />
-  <title>Manmohan Pattnaik's Portfolio | Software Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Manmohan Pattnaik | Java Software Engineer – Spring Boot &amp; Microservices</title>
   <meta name="description"
-    content="Software Developer specializing in Java, Spring Boot, Microservices, Angular, and enterprise banking applications." />
+    content="Manmohan Pattnaik – Software Engineer II building secure, high-availability Java 21 / Spring Boot microservices for enterprise banking. OAuth2, Spring Cloud Gateway, Angular, Oracle." />
   <meta name="keywords"
-    content="Manmohan Pattnaik, Java Developer, Spring Boot, Microservices, Banking Software, Angular, Oracle" />
+    content="Manmohan Pattnaik, Java Software Engineer, Spring Boot, Microservices, Spring Cloud Gateway, OAuth2, Banking Software, Angular, Oracle, Bhubaneswar" />
   <link rel="canonical" href="https://manmohan373.github.io/Portfolio/" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Manmohan's Portfolio" />
-  <meta property="og:description" content="Explore projects and skills of a frontend developer." />
-  <meta property="og:image" content="https://manmohan373.github.io/Portfolio/assets/preview.png" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Manmohan Pattnaik | Java Software Engineer" />
+  <meta property="og:description"
+    content="Secure, high-availability microservices for enterprise banking. Java 21, Spring Boot 3, OAuth2, Angular." />
+  <meta property="og:image" content="https://manmohan373.github.io/Portfolio/assets/manmohan.jpg" />
   <meta property="og:url" content="https://manmohan373.github.io/Portfolio/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Manmohan Pattnaik | Java Software Engineer" />
+  <meta name="twitter:description"
+    content="Secure, high-availability microservices for enterprise banking. Java 21, Spring Boot 3, OAuth2, Angular." />
+  <meta name="twitter:image" content="https://manmohan373.github.io/Portfolio/assets/manmohan.jpg" />
 
-  <!-- Twitter Card Meta -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Manmohan's Portfolio" />
-  <meta name="twitter:description" content="Explore projects and skills of a frontend developer." />
-  <meta name="twitter:image" content="https://manmohan373.github.io/Portfolio/assets/preview.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 
-  <!-- Schema Markup -->
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Manmohan",
-        "url": "https://manmohan373.github.io/Portfolio",
-        "sameAs": [
-          "https://github.com/manmohan373",
-          "https://linkedin.com/in/YOUR-ID"
-        ],
-        "jobTitle": "Frontend Developer"
-      }
-    </script>
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Manmohan's Portfolio",
-        "url": "https://manmohan373.github.io/Portfolio"
-      }
-    </script>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Manmohan Pattnaik",
+    "url": "https://manmohan373.github.io/Portfolio/",
+    "image": "https://manmohan373.github.io/Portfolio/assets/manmohan.jpg",
+    "jobTitle": "Software Engineer II",
+    "worksFor": { "@type": "Organization", "name": "Interland Technology Services Private Ltd." },
+    "alumniOf": "Ajay Binay Institute of Technology, Cuttack",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bhubaneswar", "addressCountry": "IN" },
+    "sameAs": [
+      "https://github.com/Manmohan373",
+      "https://linkedin.com/in/manmohan-pattnaik-64b024286"
+    ],
+    "knowsAbout": ["Java", "Spring Boot", "Microservices", "OAuth2", "Spring Cloud Gateway", "Angular", "Oracle"]
+  }
+  </script>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <h1>Manmohan Pattnaik</h1>
-        <p class="subtitle">
-          Software Developer I | Java, Spring Boot & Angular | REST API &
-          Enterprise Application
-        </p>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a href="https://github.com/Manmohan373">
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a href="assets/Manmohan_Pattnaik_Software_Engineer.pdf" class="resume-btn">
-              Download Resume
-            </a>
-          </li>
-        </ul>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo" aria-label="Manmohan Pattnaik – home">
+        <span class="logo-mark">MP</span><span class="logo-text">manmohan<span class="dim">.dev</span></span>
+      </a>
+      <nav id="menu" class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle light / dark theme" title="Toggle theme">
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+          </svg>
+        </button>
+        <a class="btn btn-sm btn-primary hide-sm" href="assets/Manmohan_Pattnaik_Software_Engineer_II.pdf" download>Resume</a>
+        <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false"
+          aria-controls="menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <section id="about" class="section">
-    <div class="container">
-      <div class="about-content">
-        <img src="assets/manmohan.jpg" alt="Manmohan Pattnaik" class="profile-img" />
-        <div class="about-text">
-          <h2>About Me</h2>
-          <p>
-            I am a results-driven Software Developer with experience in
-            designing and developing enterprise-grade applications using Java,
-            Spring Boot, Angular, and SQL. I specialize in building scalable
-            microservices and secure systems for banking and financial
-            domains.
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="status"><span class="pulse"></span> Software Engineer II &nbsp;·&nbsp; Open to new opportunities</p>
+          <h1>Hi, I'm <span class="grad">Manmohan Pattnaik</span>.</h1>
+          <p class="typed-line"><span class="prompt">&gt;</span> <span id="typed" aria-live="off"></span><span class="caret"></span></p>
+          <p class="lead">
+            I build secure, high-availability <strong>Java microservices</strong> for enterprise banking —
+            from OAuth2 authentication and escrow management to Spring Boot 3 / Java 21 modernization —
+            and I'm growing toward cloud-native system design.
           </p>
-
-          <p>
-            I have hands-on experience implementing authentication mechanisms
-            such as OAuth2 and LDAP, and working with Oracle and MySQL
-            databases. I enjoy solving complex backend problems and delivering
-            clean, production-ready solutions.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Professional Experience</h2>
-
-      <div class="experience-card">
-        <h3>Software Engineer</h3>
-        <h4>Interland Technologies Pvt. Ltd.</h4>
-        <span>July 2024 – Present | Bhubaneswar, Odisha</span>
-
-        <ul>
-          <li>
-            Developing and maintaining Escrow Management Systems for banking
-            clients using Java, Spring Boot, Angular, and Oracle.
-          </li>
-          <li>
-            Designing and implementing RESTful APIs and reusable backend
-            modules.
-          </li>
-          <li>
-            Optimizing microservices for performance, scalability, and
-            reliability.
-          </li>
-          <li>Integrating Angular frontend with backend services.</li>
-          <li>Implementing secure authentication using OAuth2 and LDAP.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Technical Skills</h2>
-
-      <div class="skills-list">
-        <div class="skill">Java</div>
-        <div class="skill">Spring Boot</div>
-        <div class="skill">Microservices</div>
-        <div class="skill">REST APIs</div>
-        <div class="skill">Angular</div>
-        <div class="skill">TypeScript</div>
-        <div class="skill">Oracle</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">OAuth2</div>
-        <div class="skill">LDAP</div>
-        <div class="skill">Docker</div>
-        <div class="skill">Git</div>
-        <div class="skill">Maven</div>
-        <div class="skill">Postman</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project experience-card">
-          <h3>Escrow Management System (Banking Domain)</h3>
-          <p>
-            Enterprise-grade backend system developed for managing escrow
-            accounts, collections, and reporting for banking clients.
-          </p>
-
-          <ul>
-            <li>
-              Built backend services using Java and Spring Boot for escrow
-              account and collection management.
-            </li>
-            <li>
-              Designed REST APIs and integrated OAuth2-based authentication.
-            </li>
-            <li>
-              Used Oracle database for transactional data handling and
-              reporting.
-            </li>
-            <li>
-              Collaborated with QA, DevOps, and UI teams for deployment and
-              production support.
-            </li>
+          <div class="cta">
+            <a class="btn btn-primary" href="#experience">View my work
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            <a class="btn btn-ghost" href="assets/Manmohan_Pattnaik_Software_Engineer_II.pdf" download>Download resume</a>
+          </div>
+          <ul class="social" aria-label="Profiles">
+            <li><a href="https://github.com/Manmohan373" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+            <li><a href="https://linkedin.com/in/manmohan-pattnaik-64b024286" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></a></li>
+            <li><a href="mailto:pattnaikmanmohan373@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg></a></li>
           </ul>
         </div>
+
+        <div class="hero-card" id="tilt">
+          <div class="photo">
+            <img src="assets/manmohan.jpg" alt="Portrait of Manmohan Pattnaik" width="420" height="420" />
+          </div>
+          <div class="chip chip-a"><span class="mono">Java 21</span></div>
+          <div class="chip chip-b"><span class="mono">Spring Boot 3</span></div>
+          <div class="chip chip-c"><span class="mono">OAuth2</span></div>
+          <div class="card-foot">
+            <div><b>Interland Technology Services</b><span>Software Engineer II · Bhubaneswar</span></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about"><span></span></a>
+    </section>
 
-  <section id="github" class="section compact">
-    <div class="container">
-      <h2>GitHub</h2>
-      <div class="experience-card">
-        <p>
-          I actively use GitHub to explore new technologies, build side
-          projects, and strengthen my problem-solving skills. My repository
-          includes backend services, frontend applications, and learning-based
-          projects.
-        </p>
-
-        <p>
-          👉 Visit my GitHub profile:
-          <a href="https://github.com/Manmohan373" target="_blank">
-            github.com/Manmohan373
-          </a>
-        </p>
+    <!-- STATS -->
+    <section class="stats" aria-label="Highlights">
+      <div class="wrap stats-grid">
+        <div class="stat reveal"><div class="num"><span data-count="12" data-suffix="+">0</span></div><p>Spring Boot microservices built &amp; maintained</p></div>
+        <div class="stat reveal"><div class="num"><span data-count="4">0</span></div><p>Enterprise banking clients served</p></div>
+        <div class="stat reveal"><div class="num"><span data-count="7" data-suffix="+">0</span></div><p>Legacy modules migrated to Java 21 / Boot 3</p></div>
+        <div class="stat reveal"><div class="num"><span data-count="0">0</span></div><p>Production downtime during the migration</p></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section compact">
-    <div class="container">
-      <h2>Contact</h2>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="eyebrow">01 · About</span>
+          <h2>Backend engineer, banking-grade by habit.</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Java Software Engineer with <strong>2+ years</strong> of experience building secure,
+              high-availability microservices for enterprise banking clients. I was promoted from Associate to
+              Software Engineer I within my first year for consistent delivery on authentication, escrow
+              management, and integration workloads — and I'm now a <strong>Software Engineer II</strong>.
+            </p>
+            <p>
+              Day to day I work across <strong>Spring Boot 3.x / Java 21</strong>, OAuth2 security, and REST/SOAP
+              integrations in distributed systems, and I triage production incidents end to end. I'm now looking to
+              bring my backend system design and cloud-native engineering skills to a growth-focused engineering team.
+            </p>
+            <ul class="facts">
+              <li><span>Location</span> Bhubaneswar, India</li>
+              <li><span>Role</span> Software Engineer II</li>
+              <li><span>Education</span> MCA · SGPA 8.64</li>
+              <li><span>Focus</span> Microservices · Security · Integration</li>
+            </ul>
+          </div>
+          <div class="code-card reveal" aria-label="Profile summary as code">
+            <div class="code-bar"><i></i><i></i><i></i><span class="mono">engineer.java</span></div>
+<pre class="mono"><span class="c">// what I bring to a team</span>
+<span class="k">record</span> <span class="t">Engineer</span>(
+  <span class="t">String</span> name,
+  <span class="t">String</span> role,
+  <span class="t">List&lt;String&gt;</span> strengths
+) {}
 
-      <p>
-        📍 Bhubaneswar, Odisha, India <br />
-        📞 <a href="tel:+919337615662">+91 93376 15662</a> <br />
-        📧
-        <a href="mailto:pattnaikmanmohan373@gmail.com">pattnaikmanmohan373@gmail.com</a>
-        <br />
-        🔗
-        <a href="https://linkedin.com/in/manmohan-pattnaik-64b024286" target="_blank">LinkedIn Profile</a>
-      </p>
-    </div>
-  </section>
+<span class="t">var</span> me = <span class="k">new</span> <span class="t">Engineer</span>(
+  <span class="s">"Manmohan Pattnaik"</span>,
+  <span class="s">"Software Engineer II"</span>,
+  <span class="t">List</span>.of(
+    <span class="s">"Spring Boot 3 / Java 21"</span>,
+    <span class="s">"OAuth2 &amp; RBAC security"</span>,
+    <span class="s">"REST + SOAP integration"</span>,
+    <span class="s">"Production incident triage"</span>
+  )
+);</pre>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 ManmohanPattnaik. All Rights Reserved.</p>
+    <!-- ARCHITECTURE -->
+    <section class="section alt" id="architecture">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="eyebrow">02 · Architecture</span>
+          <h2>The kind of system I work on.</h2>
+          <p class="sub">An illustrative, simplified view of a microservices banking platform like the one I support. Hover or tap a node.</p>
+        </header>
+
+        <div class="arch reveal">
+          <svg viewBox="0 0 900 410" role="img" aria-labelledby="archT archD" id="archSvg">
+            <title id="archT">Microservices architecture diagram</title>
+            <desc id="archD">An Angular UI calls Spring Cloud Gateway, which routes to an authorization server, escrow, reporting, transaction and notification services backed by Oracle, with Eureka and Config Server, and SOAP/REST links to external systems.</desc>
+
+            <g class="links" fill="none" stroke-width="2">
+              <path d="M150 207 H230" />
+              <path d="M370 207 C425 207 425 51 480 51" />
+              <path d="M370 207 C425 207 425 129 480 129" />
+              <path d="M370 207 H480" />
+              <path d="M370 207 C425 207 425 285 480 285" />
+              <path d="M370 207 C425 207 425 363 480 363" />
+              <path d="M620 129 C685 129 685 207 740 207" />
+              <path d="M620 207 H740" />
+              <path d="M620 285 C685 285 685 207 740 207" />
+              <path d="M620 363 C680 363 680 330 740 330" class="ext" />
+              <path d="M300 162 V10 H805 V30" class="ext" />
+            </g>
+
+            <g class="node" data-info="Angular UI — login &amp; authentication workflows wired to Spring Boot APIs, with environment-specific configuration." tabindex="0">
+              <rect x="30" y="172" width="120" height="70" rx="14" /><text x="90" y="204" class="nt">Angular</text><text x="90" y="224" class="ns">Web client</text>
+            </g>
+            <g class="node hot" data-info="Spring Cloud Gateway — centralized routing and secure inter-service communication; tuned for request-routing reliability." tabindex="0">
+              <rect x="230" y="162" width="140" height="90" rx="14" /><text x="300" y="199" class="nt">API Gateway</text><text x="300" y="219" class="ns">Spring Cloud</text><text x="300" y="236" class="ns">Gateway</text>
+            </g>
+            <g class="node sec" data-info="Authorization Server — OAuth2 token issuing &amp; introspection, LDAP authentication and role-based access control (RBAC)." tabindex="0">
+              <rect x="480" y="20" width="140" height="62" rx="14" /><text x="550" y="48" class="nt">Auth Server</text><text x="550" y="67" class="ns">OAuth2 · LDAP</text>
+            </g>
+            <g class="node" data-info="Escrow Management service — core escrow account and collection workflows, built with Spring Boot and Spring Data JPA." tabindex="0">
+              <rect x="480" y="98" width="140" height="62" rx="14" /><text x="550" y="126" class="nt">Escrow</text><text x="550" y="145" class="ns">Spring Boot</text>
+            </g>
+            <g class="node" data-info="Reporting service — query-optimized data access with JPA, Hibernate and native SQL for banking reports." tabindex="0">
+              <rect x="480" y="176" width="140" height="62" rx="14" /><text x="550" y="204" class="nt">Reporting</text><text x="550" y="223" class="ns">JPA · native SQL</text>
+            </g>
+            <g class="node" data-info="Transaction processing service — core banking transaction flows with request validation and business logic." tabindex="0">
+              <rect x="480" y="254" width="140" height="62" rx="14" /><text x="550" y="282" class="nt">Transactions</text><text x="550" y="301" class="ns">Spring MVC</text>
+            </g>
+            <g class="node" data-info="Notification service — outbound notifications for banking workflows, alongside middleware communication." tabindex="0">
+              <rect x="480" y="332" width="140" height="62" rx="14" /><text x="550" y="360" class="nt">Notifications</text><text x="550" y="379" class="ns">Spring Boot</text>
+            </g>
+            <g class="node db" data-info="Oracle DB — transactional system of record for banking operations, tuned through query optimization." tabindex="0">
+              <rect x="740" y="172" width="130" height="70" rx="14" /><text x="805" y="204" class="nt">Oracle DB</text><text x="805" y="224" class="ns">System of record</text>
+            </g>
+            <g class="node ext" data-info="External systems &amp; middleware — integrated through REST APIs and SOAP web services." tabindex="0">
+              <rect x="740" y="300" width="130" height="60" rx="14" /><text x="805" y="326" class="nt">External</text><text x="805" y="344" class="ns">REST · SOAP</text>
+            </g>
+            <g class="node ext" data-info="Service discovery &amp; centralized configuration — Eureka and Spring Cloud Config Server." tabindex="0">
+              <rect x="740" y="30" width="130" height="60" rx="14" /><text x="805" y="56" class="nt">Eureka · Config</text><text x="805" y="74" class="ns">Discovery</text>
+            </g>
+          </svg>
+          <p class="arch-cap" id="archCap" role="status">Select a component to see what I did with it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="eyebrow">03 · Experience</span>
+          <h2>Where I've been shipping.</h2>
+        </header>
+
+        <div class="timeline">
+          <div class="tl-rail" aria-hidden="true"><span id="railFill"></span></div>
+
+          <article class="tl-item reveal">
+            <span class="dot now" aria-hidden="true"></span>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3>Software Engineer II</h3>
+                  <p class="org">Interland Technology Services Pvt. Ltd. <span class="dim">· Bhubaneswar</span></p>
+                </div>
+                <span class="date">July 2024 – Present</span>
+              </div>
+              <p class="proj"><span class="tag">Project</span> Enterprise Escrow Management System (EMS)</p>
+              <div class="pills">
+                <span>Java</span><span>Spring Boot</span><span>Angular</span><span>Oracle DB</span><span>OAuth 2.0</span><span>Microservices</span>
+              </div>
+              <ul class="bullets">
+                <li>Built and maintained <b>12+ Spring Boot / Spring MVC microservices</b> powering core banking workflows — authentication, escrow management, reporting, notifications and transaction processing — for <b>4 enterprise banking clients</b>.</li>
+                <li>Designed <b>RESTful APIs and SOAP integrations</b> connecting banking applications, middleware and external systems, applying API-management practices and reusable service patterns.</li>
+                <li>Led the migration of core services to <b>Spring Boot 3.x and Java 21</b>, resolving Jakarta EE compatibility issues and modernizing Spring Security / MVC config across <b>7+ legacy modules with zero production downtime</b>.</li>
+                <li>Configured and optimized <b>Spring Cloud Gateway</b> for centralized routing and secure inter-service communication, improving routing reliability.</li>
+                <li>Implemented business logic with <b>Spring Data JPA, Hibernate and native SQL</b>, tuning queries to improve data-access efficiency.</li>
+                <li>Built <b>Angular login and authentication</b> workflows integrated with Spring Boot APIs and environment-specific configuration.</li>
+                <li>Triaged and resolved <b>production incidents</b> across REST/SOAP services, middleware communication, request validation and backend logic.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item reveal">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="tl-card slim">
+              <div class="tl-head">
+                <div>
+                  <h3>Career progression</h3>
+                  <p class="org">Same company, three levels</p>
+                </div>
+                <span class="date">Since July 2024</span>
+              </div>
+              <ol class="steps">
+                <li><b>Associate</b><span>Joined — authentication &amp; integration work</span></li>
+                <li><b>Software Engineer I</b><span>Promoted within a year</span></li>
+                <li class="cur"><b>Software Engineer II</b><span>Current role</span></li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section alt" id="projects">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="eyebrow">04 · Projects</span>
+          <h2>Selected work.</h2>
+        </header>
+        <div class="proj-grid">
+          <article class="proj-card reveal">
+            <div class="proj-top"><span class="badge live">Production</span><span class="mono dim">Banking · Enterprise</span></div>
+            <h3>Enterprise Escrow Management System</h3>
+            <p>A microservices platform for escrow account and collection management, reporting and notifications — secured with OAuth2 and used by four enterprise banking clients.</p>
+            <ul class="mini">
+              <li>12+ Spring Boot services behind Spring Cloud Gateway</li>
+              <li>Spring Boot 3 / Java 21 migration of 7+ modules, zero downtime</li>
+              <li>REST + SOAP integration with middleware &amp; external systems</li>
+            </ul>
+            <div class="pills sm"><span>Java</span><span>Spring Boot</span><span>Angular</span><span>Oracle</span><span>OAuth2</span></div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div class="proj-top"><span class="badge wip">In progress</span><span class="mono dim">Personal project</span></div>
+            <h3>Enterprise Workspace</h3>
+            <p>A multi-tenant workspace platform built with Spring Boot microservices and Angular, applying the enterprise design patterns I use on client projects.</p>
+            <ul class="mini">
+              <li>JWT-based authentication</li>
+              <li>Containerized with Docker</li>
+              <li>AWS deployment in preparation</li>
+            </ul>
+            <div class="pills sm"><span>Java 21</span><span>Spring Boot</span><span>Angular</span><span>PostgreSQL</span><span>Docker</span></div>
+            <a class="link" href="https://github.com/Manmohan373" target="_blank" rel="noopener">Follow on GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="eyebrow">05 · Skills</span>
+          <h2>Tech I work with.</h2>
+        </header>
+        <div class="filters reveal" role="tablist" aria-label="Skill categories">
+          <button class="f active" data-f="all" role="tab" aria-selected="true">All</button>
+          <button class="f" data-f="lang" role="tab" aria-selected="false">Languages</button>
+          <button class="f" data-f="backend" role="tab" aria-selected="false">Backend</button>
+          <button class="f" data-f="micro" role="tab" aria-selected="false">Microservices</button>
+          <button class="f" data-f="sec" role="tab" aria-selected="false">Security</button>
+          <button class="f" data-f="front" role="tab" aria-selected="false">Frontend</button>
+          <button class="f" data-f="db" role="tab" aria-selected="false">Database</button>
+          <button class="f" data-f="tools" role="tab" aria-selected="false">Tools &amp; DevOps</button>
+        </div>
+        <div class="skill-grid" id="skillGrid">
+          <span class="sk" data-c="lang">Java 8 / 17 / 21</span><span class="sk" data-c="lang">SQL</span><span class="sk" data-c="lang">XML</span><span class="sk" data-c="lang">JavaScript</span><span class="sk" data-c="lang">TypeScript</span>
+          <span class="sk" data-c="backend">Spring Boot</span><span class="sk" data-c="backend">Spring Security</span><span class="sk" data-c="backend">Spring Data JPA</span><span class="sk" data-c="backend">Hibernate</span><span class="sk" data-c="backend">Spring Authorization Server</span>
+          <span class="sk" data-c="micro">Spring Cloud Gateway</span><span class="sk" data-c="micro">Eureka</span><span class="sk" data-c="micro">Config Server</span><span class="sk" data-c="micro">REST APIs</span><span class="sk" data-c="micro">SOAP Web Services</span>
+          <span class="sk" data-c="sec">OAuth2</span><span class="sk" data-c="sec">LDAP Authentication</span><span class="sk" data-c="sec">Token Introspection</span><span class="sk" data-c="sec">RBAC</span>
+          <span class="sk" data-c="front">Angular</span><span class="sk" data-c="front">HTML5</span><span class="sk" data-c="front">CSS3</span>
+          <span class="sk" data-c="db">Oracle</span><span class="sk" data-c="db">MySQL</span><span class="sk" data-c="db">PostgreSQL</span>
+          <span class="sk" data-c="tools">Git</span><span class="sk" data-c="tools">Maven</span><span class="sk" data-c="tools">Docker</span><span class="sk" data-c="tools">Postman</span><span class="sk" data-c="tools">IntelliJ IDEA</span><span class="sk" data-c="tools">VS Code</span><span class="sk" data-c="tools">Eclipse</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section alt" id="education">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="eyebrow">06 · Education</span>
+          <h2>Education &amp; certifications.</h2>
+        </header>
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <span class="badge">Sep 2022 – Apr 2024</span>
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p>Ajay Binay Institute of Technology (ABIT), Cuttack</p>
+            <p class="grade">SGPA <b>8.64</b></p>
+          </article>
+          <article class="edu-card reveal">
+            <span class="badge">NPTEL</span>
+            <h3>Certifications</h3>
+            <ul class="certs">
+              <li>Cloud Computing</li>
+              <li>Introduction to Soft Computing</li>
+              <li>Introduction to Internet of Things</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact reveal">
+          <div>
+            <span class="eyebrow">07 · Contact</span>
+            <h2>Let's build something reliable.</h2>
+            <p class="sub">I'm looking to bring backend system design and cloud-native engineering to a growth-focused team. Reach out — I reply quickly.</p>
+            <ul class="contact-list">
+              <li><span>Email</span><a href="mailto:pattnaikmanmohan373@gmail.com">pattnaikmanmohan373@gmail.com</a></li>
+              <li><span>Phone</span><a href="tel:+919337615662">+91 93376 15662</a></li>
+              <li><span>LinkedIn</span><a href="https://linkedin.com/in/manmohan-pattnaik-64b024286" target="_blank" rel="noopener">manmohan-pattnaik</a></li>
+              <li><span>GitHub</span><a href="https://github.com/Manmohan373" target="_blank" rel="noopener">Manmohan373</a></li>
+              <li><span>Location</span>Bhubaneswar, India</li>
+            </ul>
+          </div>
+          <form id="contact-form" class="form" novalidate>
+            <label>Name<input id="name" name="name" type="text" autocomplete="name" required /></label>
+            <label>Email<input id="email" name="email" type="email" autocomplete="email" required /></label>
+            <label>Message<textarea id="message" name="message" rows="5" required></textarea></label>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-note" id="formNote" role="status">Opens your email app with the message pre-filled.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-inner">
+      <p>&copy; <span id="year">2026</span> Manmohan Pattnaik. All rights reserved.</p>
+      <a href="#top" class="to-top">Back to top ↑</a>
     </div>
   </footer>
 
